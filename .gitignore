@@ -1,0 +1,10 @@
+__pycache__/
+.vscode/
+node_modules/
+db.sqlite3
+manage.py
+package-lock.json
+package.json
+tailwind.config.js
+static/
+env/
