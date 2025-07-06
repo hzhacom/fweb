@@ -2,6 +2,11 @@ const { Container } = require('postcss')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  prefix: 'tw-',
+  corePlugins: {
+    preflight: false,
+    container: false,
+  },
   content: [
     "./me/templates/**/*.html",
     "./myweb/templates/**/*.html",
@@ -9,13 +14,5 @@ module.exports = {
   theme: {
     extend: { extend: {} },
   },
-  plugins: [],
-}
-
-tailwind.config = {
-  prefix: 'tw-',
-  corePlugins: {
-    preflight: false,
-    container: false,
-  },
+  plugins: [],  
 }
