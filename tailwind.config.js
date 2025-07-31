@@ -5,7 +5,7 @@ module.exports = {
   prefix: 'tw-',
   corePlugins: {
     preflight: false,
-    container: false,
+    // container: false,
   },
   content: [
     "./me/templates/**/*.html",

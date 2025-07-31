@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>欢迎来到</title>
     {% load static %}
+    {% load django_bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
 </head>
 <body>
+    <a href="{% url 'me:index' %}">首页</a>
+    <a href="{% url 'me:mynote' %}">我的笔记</a>
     {% block content %}{% endblock content %}
 </body>
 </html>
